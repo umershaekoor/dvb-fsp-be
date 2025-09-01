@@ -32,7 +32,7 @@ public class MainResource {
 
         tokenStore.put(token, info);
 
-        String url = "http://localhost:4200/sign?token=" + token;
+        String url = "https://finger-print-poc.vercel.app//sign?token=" + token;
         return Response.ok(Map.of("url", url)).build();
     }
 
